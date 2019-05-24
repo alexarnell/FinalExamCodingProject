@@ -11,8 +11,6 @@ import java.time.LocalDate;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-//import com.sun.xml.ws.org.objectweb.asm.Label;
-
 import javafx.fxml.Initializable;
 import javafx.event.ActionEvent;
 
@@ -51,10 +49,6 @@ public class LoanCalcViewController implements Initializable   {
 		this.SC = sc;
 	}
 	
-	/**
-	 * btnCalcLoan - Fire this event when the button clicks
-	 * 
-	 */
 	@FXML
 	private void btnCalcLoan(ActionEvent event) {
 		double dLoanAmount = Double.parseDouble(LoanAmount.getText());
@@ -79,4 +73,3 @@ public class LoanCalcViewController implements Initializable   {
 	 
 	}
 }
-

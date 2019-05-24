@@ -1,24 +1,25 @@
 package pkgUT;
 
-import static org.junit.Assert.*;
-import org.apache.poi.ss.formula.functions.*;
+import java.util.Date;
 import org.junit.Test;
 
+import app.helper.Loan;
+
 public class LoanTest {
-
+	
 	@Test
-	public void test() {
-		double PMT;
-		double r = 0.07/12;
-		double n = 20 * 12;
-		double p = 150000;
-		double f = 0;
-		boolean t= false;
-		PMT = Math.abs(FinanceLib.pmt(r,n,p,f,t));
-
-		double PMTExpected = 1162.95;
+	public void LoanTest() {
 		
-		assertEquals(PMTExpected, PMT, 0.01);
+		double loanAmount = 100000;
+		double interestRate = 0.07;
+		int nbrOfYears = 20;
+		double additionalPayment = 100;
+		Date firstPaymentDate = Loan.parseDate("2019-06-01");
+		boolean bInterestCalc = false;
+		double futureValue = 0;
+		
+		Loan = new Loan(loanAmount, interestRate, nbrOfYears, additionalPayment);
 	}
 
 }
+

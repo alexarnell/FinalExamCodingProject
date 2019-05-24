@@ -25,9 +25,8 @@ public class StudentCalc extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		this.primaryStage = primaryStage;
 		ShowScreen();
-		
 	}
-	
+
 	public void ShowScreen() {
 		// Parent root;
 		try {
@@ -46,6 +45,4 @@ public class StudentCalc extends Application {
 			e.printStackTrace();
 		}
 	}
-
-
 }
